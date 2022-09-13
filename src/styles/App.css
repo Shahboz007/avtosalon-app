@@ -64,7 +64,8 @@ body {
 
 .container {
   max-width: 1440px!important;
-  padding: 0 94px!important;
+  padding-left: 94px!important;
+  padding-right: 94px!important;
 }
 
 /* ANTD BUTTON */

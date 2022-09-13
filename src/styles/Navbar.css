@@ -1,9 +1,8 @@
-.navbar-section {
-  height: 64px!important;
-}
 .ant-layout-header {
   padding: 0!important;
+  padding-top: 40px!important;
   background: var(--white)!important;
+  height: unset!important;
 }
 .ant-menu {
   height: 100%;

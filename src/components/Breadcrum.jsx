@@ -1,7 +1,7 @@
 import React from "react";
 import {Breadcrumb} from "antd";
 
-function Breadcrum() {
+function MyBreadcrumb() {
   return (
     <Breadcrumb style={{ margin: "16px 0" }}>
       <Breadcrumb.Item>Home</Breadcrumb.Item>
@@ -11,4 +11,4 @@ function Breadcrum() {
   );
 }
 
-export default Breadcrum;
+export default MyBreadcrumb;
