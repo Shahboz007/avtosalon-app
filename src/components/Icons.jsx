@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from "../styles/Icon.module.css";
 
-function Icons() {
+export const  Person = ({style})=> {
+  const classes = [
+    styles.icon, 
+    styles.person
+  ];
   return (
-    <i className={styles.icon, styles.person}></i>
+    <i className={classes.join(' ')} style={style}></i>
   )
 }
-
-export default Icons

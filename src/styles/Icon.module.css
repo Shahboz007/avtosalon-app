@@ -1,0 +1,9 @@
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  mask: url('../img/user-icon.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: var(--white);
+}

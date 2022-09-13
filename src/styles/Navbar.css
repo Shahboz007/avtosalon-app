@@ -1,5 +1,20 @@
-.ant-menu-overflow {
+.navbar-section {
+  height: 64px!important;
+}
+.ant-layout-header {
+  padding: 0!important;
+  background: var(--white)!important;
+}
+.ant-menu {
+  height: 100%;
   justify-content: flex-end;
+  background: none!important;
+}
+.ant-menu-horizontal {
+  border: none!important;
+}
+.ant-menu .ant-menu-item-only-child {
+  padding: 0!important;
 }
 .ant-menu-item,
 .ant-menu-overflow-item,
@@ -9,8 +24,13 @@
 .ant-menu-title-content {
   background: none !important;
   color: none !important;
-  cursor: default!important;
+  cursor: default !important;
+  display: flex !important;
+  align-items: center !important;
 }
 .ant-menu-item a {
   position: relative;
+}
+.ant-menu-item::after {
+  content: none!important;
 }

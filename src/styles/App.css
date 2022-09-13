@@ -55,10 +55,16 @@
   --bs-danger: #FF6A55; 
   --bs-yellow: #FFD88D;
   --bs-grey-light: #F4F4F4;
+  --th-dark: #001529;
 }
 
 body {
   font-family: 'Noto Sans'!important;
+}
+
+.container {
+  max-width: 1440px!important;
+  padding: 0 94px!important;
 }
 
 /* ANTD BUTTON */
@@ -67,7 +73,9 @@ body {
   padding: 12px 35px!important;
   height: auto!important;
   line-height: 22px!important;
-}
-.ant-btn-primary {
-  background-color: var(--bs-primary)!important;
+  display: flex!important;
+  align-items: center!important;
+  font-family: 'Inter'!important;
+  font-weight: 700!important;
+  font-size: 15px!important;
 }
