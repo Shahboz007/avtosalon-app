@@ -58,14 +58,20 @@
   --th-dark: #001529;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: 'Noto Sans'!important;
 }
+
 
 .container {
   max-width: 1440px!important;
   padding-left: 94px!important;
   padding-right: 94px!important;
+  margin: 0 auto;
 }
 
 /* ANTD BUTTON */
