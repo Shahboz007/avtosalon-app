@@ -1,12 +1,11 @@
 import React from "react";
-import {Breadcrumb} from "antd";
+import { Breadcrumb } from "antd";
 
 function MyBreadcrumb() {
   return (
     <Breadcrumb style={{ margin: "16px 0" }}>
-      <Breadcrumb.Item>Home</Breadcrumb.Item>
-      <Breadcrumb.Item>List</Breadcrumb.Item>
-      <Breadcrumb.Item>App</Breadcrumb.Item>
+      <Breadcrumb.Item>Bosh sahifa</Breadcrumb.Item>
+      <Breadcrumb.Item>Modellar</Breadcrumb.Item>
     </Breadcrumb>
   );
 }
