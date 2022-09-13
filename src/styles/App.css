@@ -1,0 +1,73 @@
+/* FONTS */
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), 
+       url('../fonts/noto-sans-v27-latin-regular.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: swap;
+  font-weight: 500;
+  src: url('../fonts/noto-sans-v27-latin-500.woff2') format('woff2'), 
+       url('../fonts/noto-sans-v27-latin-500.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: swap;
+  font-weight: 600;
+  src: url('../fonts/noto-sans-v27-latin-600.woff2') format('woff2'), 
+       url('../fonts/noto-sans-v27-latin-600.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  font-weight: 600;
+  src: url('../fonts/inter-v12-latin-600.woff2') format('woff2'), 
+       url('../fonts/inter-v12-latin-600.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  font-weight: 700;
+  src: url('../fonts/inter-v12-latin-700.woff2') format('woff2'), 
+       url('../fonts/inter-v12-latin-700.woff') format('woff'); 
+}
+
+/* GLOBALE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box!important;
+}
+*::before,
+*::after {
+  box-sizing: inherit!important;
+}
+
+:root {
+  --grey: #6F767E;  
+  --white: #FCFCFC;
+  --bs-primary: #2A85FF;
+  --bs-dark: #000000;
+  --bs-light: #F6F6F6;
+  --bs-danger: #FF6A55; 
+  --bs-yellow: #FFD88D;
+  --bs-grey-light: #F4F4F4;
+}
+
+body {
+  font-family: 'Noto Sans'!important;
+}
+
+/* ANTD BUTTON */
+.ant-btn {
+  border-radius: 12px!important;
+  padding: 12px 35px!important;
+  height: auto!important;
+  line-height: 22px!important;
+}
+.ant-btn-primary {
+  background-color: var(--bs-primary)!important;
+}

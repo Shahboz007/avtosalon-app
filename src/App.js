@@ -4,6 +4,7 @@ import CarCategory from './components/CarCategory';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Review from './components/Review';
+import "./styles/App.css";
 
 const App = () => (
   <Router>

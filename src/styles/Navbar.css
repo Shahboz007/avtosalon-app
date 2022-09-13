@@ -1,0 +1,16 @@
+.ant-menu-overflow {
+  justify-content: flex-end;
+}
+.ant-menu-item,
+.ant-menu-overflow-item,
+.ant-menu-item-selected,
+.ant-menu-item-only-child,
+.ant-menu-item-active,
+.ant-menu-title-content {
+  background: none !important;
+  color: none !important;
+  cursor: default!important;
+}
+.ant-menu-item a {
+  position: relative;
+}

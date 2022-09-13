@@ -1,6 +1,20 @@
-import { Breadcrumb, Layout, Menu } from "antd";
+import { Button, Layout, Menu } from "antd";
 import React from "react";
-const { Header, Content, Footer } = Layout;
+import '../styles/Navbar.css';
+import {Link} from "react-router-dom";
+
+const { Header } = Layout;
+
+const menuItem = [
+  {
+    label: (
+      <Link to={'/admin'}>
+        <Button size="large" type='primary'>Adminga o'tish</Button>
+      </Link>
+    ),
+    key: 'admin'
+  }
+]
 
 const Navbar = () => (
   <Layout>
@@ -11,50 +25,13 @@ const Navbar = () => (
         width: "100%",
       }}
     >
-      <div className="logo" />
       <Menu
         theme="dark"
         mode="horizontal"
         defaultSelectedKeys={["2"]}
-        items={new Array(3).fill(null).map((_, index) => ({
-          key: String(index + 1),
-          label: `nav ${index + 1}`,
-        }))}
+        items={menuItem}
       />
     </Header>
-    <Content
-      className="site-layout"
-      style={{
-        padding: "0 50px",
-        marginTop: 64,
-      }}
-    >
-      <Breadcrumb
-        style={{
-          margin: "16px 0",
-        }}
-      >
-        <Breadcrumb.Item>Home</Breadcrumb.Item>
-        <Breadcrumb.Item>List</Breadcrumb.Item>
-        <Breadcrumb.Item>App</Breadcrumb.Item>
-      </Breadcrumb>
-      <div
-        className="site-layout-background"
-        style={{
-          padding: 24,
-          minHeight: 380,
-        }}
-      >
-        Content
-      </div>
-    </Content>
-    <Footer
-      style={{
-        textAlign: "center",
-      }}
-    >
-      Ant Design ©2018 Created by Ant UED
-    </Footer>
   </Layout>
 );
 
